@@ -1,6 +1,10 @@
 services:
   web:
-    build: .
+    build:
+      context: .
+      args:
+        VITE_BACKEND_URL: https://example.com/
+    container_name: coin-board-ui
     ports:
       - "3000:3000"
     environment:
