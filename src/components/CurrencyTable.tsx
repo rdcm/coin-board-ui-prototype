@@ -14,7 +14,7 @@ const CurrencyTable: React.FC = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch('http://localhost:7373/rates');
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/rates`);
       const json = await res.json();
       const rates = json['rates'] as CurrencyRate[];
       setRates(rates);
