@@ -12,8 +12,8 @@ dist/
 # TypeScript
 *.tsbuildinfo
 
-# Vite
-.vite/
+# Next
+.next
 
 # Production build
 build/
